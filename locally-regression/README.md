@@ -37,4 +37,5 @@ This project implements **Locally Weighted Linear Regression**, a non-parametric
    ```bash
    pip install numpy pandas matplotlib
 2. Run:
+   ```bash
    python locally_weighted_regression.py
