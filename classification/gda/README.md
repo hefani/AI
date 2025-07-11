@@ -41,7 +41,7 @@ The target variable is personality_type (e.g., introvert, extrovert, ambivert).
 
 # Files
 
-- `GDA.py` – Core LWR implementation  
+- `GDA.py` – Main implementation  
 - `personality_synthetic_dataset.csv` – Sample dataset
 - `README.md` – Project documentation
 
