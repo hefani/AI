@@ -23,3 +23,35 @@ personality_synthetic_dataset.csv: Contains features like:
 - Risk taking
 - ...and more (30 total)
 The target variable is personality_type (e.g., introvert, extrovert, ambivert).
+
+---
+
+# Concepts Used
+
+- Multivariate Gaussian Distribution
+- Maximum Likelihood Estimation (MLE)
+- Discriminant Functions
+- Linear Decision Boundaries
+- Standardization
+- Soft Classification
+- Evaluation Metrics
+- NumPy Linear Algebra
+
+---
+
+# Files
+
+- `GDA.py` – Core LWR implementation  
+- `personality_synthetic_dataset.csv` – Sample dataset of salaries vs. years of experience  
+- `README.md` – Project documentation
+
+---
+
+# How to Run
+
+1. Install requirements:
+   ```bash
+   pip install numpy pandas scikit-learn
+2. Run:
+   ```bash
+   python GDA.py
