@@ -22,6 +22,7 @@ personality_synthetic_dataset.csv: Contains features like:
 - Empathy
 - Risk taking
 - ...and more (30 total)
+
 The target variable is personality_type (e.g., introvert, extrovert, ambivert).
 
 ---
