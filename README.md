@@ -6,9 +6,11 @@ This repository contains implementations of various machine learning algorithms 
 This repository contains implementations of foundational machine learning algorithms categorized into classification and regression sections...
 
 ## Personal Motivation
-I developed this project to deepen my understanding of foundational machine learning algorithms, specifically classification models like Gaussian Discriminant Analysis and Softmax Regression. Implementing these algorithms from scratch helped me grasp the mathematical concepts and practical challenges behind supervised learning methods.
+My journey into machine learning began with Andrew Ng’s renowned Machine Learning course, where I have completed the first ten videos covering fundamental concepts such as supervised learning, logistic regression, and empirical risk minimization. These lessons sparked my passion for understanding the theory behind algorithms and inspired me to implement core models like Gaussian Discriminant Analysis and Softmax Regression from scratch.
 
-My goal is to apply these skills to real-world data problems, especially in personality prediction and behavioral analytics, which aligns with my research interests. Preparing this project also supports my application for Mitacs, where I hope to collaborate on data-driven research and contribute meaningful insights through machine learning.
+This repository represents my hands-on effort to deepen my knowledge by translating theory into practice, especially focusing on classification and regression problems with real-world datasets like personality prediction and raisin classification. By working through the challenges of data preprocessing, algorithm implementation, and model evaluation, I have strengthened my foundational skills and developed a practical understanding of how machine learning works beyond theory.
+
+My goal is to apply this growing expertise to impactful research projects, particularly through the Mitacs program, where I aim to collaborate on data-driven problems and contribute innovative solutions. This project not only showcases my technical ability but also my commitment to continuous learning and research, driven by both academic curiosity and a desire to make meaningful contributions in the field of artificial intelligence.
 
 ## Repository Structure
 
