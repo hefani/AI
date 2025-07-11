@@ -16,7 +16,8 @@ This project implements logistic regression from scratch using batch gradient as
 Raisin_Dataset.csv: Contains features like:
 - Eccentricity
 - MajorAxisLength
-The target variable is Raisin Class (binary: "Besni" = 0, "Kecimen" = 1)
+- ...and more (30 total)
+- The target variable is Raisin Class (binary: "Besni" = 0, "Kecimen" = 1)
 
 ---
 
