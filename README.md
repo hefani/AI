@@ -5,6 +5,11 @@ This repository contains implementations of various machine learning algorithms 
 ## Overview
 This repository contains implementations of foundational machine learning algorithms categorized into classification and regression sections...
 
+## Personal Motivation
+I developed this project to deepen my understanding of foundational machine learning algorithms, specifically classification models like Gaussian Discriminant Analysis and Softmax Regression. Implementing these algorithms from scratch helped me grasp the mathematical concepts and practical challenges behind supervised learning methods.
+
+My goal is to apply these skills to real-world data problems, especially in personality prediction and behavioral analytics, which aligns with my research interests. Preparing this project also supports my application for Mitacs, where I hope to collaborate on data-driven research and contribute meaningful insights through machine learning.
+
 ## Repository Structure
 
 - **classification/**  
