@@ -17,9 +17,9 @@ This project implements Gaussian Discriminant Analysis (GDA) from scratch to cla
 # DataSet
 
 personality_synthetic_dataset.csv: Contains features like:
--Social energy
--Talkativeness
--Empathy
--Risk taking
--...and more (30 total)
+- Social energy
+- Talkativeness
+- Empathy
+- Risk taking
+- ...and more (30 total)
 The target variable is personality_type (e.g., introvert, extrovert, ambivert).
