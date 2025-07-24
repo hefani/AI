@@ -1,28 +1,19 @@
-# Softmax Regression Projects
-This repository showcases two applications of softmax (multinomial logistic) regression using gradient descent:
-- Personality Type Classification: Predicts if a person is an Introvert, Extrovert, or Ambivert based on psychological features.
-- Raisin Classification: Classifies raisin types (Kecimen or Besni) using geometrical features.
+# Gaussian Discriminant Analysis (GDA) Classifier for Personality Prediction
+This repository contains an implementation of Gaussian Discriminant Analysis (GDA) from scratch in Python for multi-class classification. The model is applied on a synthetic personality dataset with features representing various personality traits to predict personality types.
  
 ---
 
 # Overview
 
-- This repository showcases two machine learning models built using Softmax Regression 
-- Softmax Regression is a supervised learning algorithm used for multiclass classification
-- It extends logistic regression to handle multiple classes by predicting a probability distribution over all possible classes
-- The algorithm learns separate weight vectors for each class and applies the softmax function to map the output to a probability simplex
-- It is trained using cross-entropy loss and gradient descent, making it ideal for problems like sentiment analysis, personality classification where the output isn’t just binary
+- This repository implements Gaussian Discriminant Analysis (GDA), a generative machine learning model for multi-class classification.
+- GDA models the conditional distribution of features for each class as a multivariate Gaussian with a shared covariance matrix.
+- The model estimates class-wise means, a shared covariance matrix, and class priors during training.
+- Classification is done by evaluating posterior probabilities derived from the Gaussian likelihood and class priors.
+- GDA is particularly effective when the class-conditional feature distributions approximately follow Gaussian distributions and shares covariance structure, making it suitable for problems like personality type prediction with continuous trait features.
   
 ---
 
 # DataSet
-
-Raisin_Dataset.csv: Contains features like:
-- Eccentricity
-- MajorAxisLength
-- ...and more
-
-The target variable is Raisin Class (binary: "Besni" = 0, "Kecimen" = 1)
 
 personality_synthetic_dataset.csv: Contains features like:
 - Social energy
@@ -37,21 +28,21 @@ The target variable is personality_type (e.g., introvert, extrovert, ambivert).
 
 # Concepts Used
 
-- Multiclass Logistic Regression (Softmax)
-- Gradient Descent Optimization
-- One-hot Encoding
-- Cost Function for Multiclass Classification
-- Feature Scaling using StandardScaler
-- NumPy for vectorized matrix operations
+- Gaussian Discriminant Analysis (GDA): A generative classification model that assumes class-conditional data follows a multivariate normal distribution with shared covariance.
+- Multivariate Normal Distribution: Used to model feature distribution per class with mean vectors and covariance matrix.
+- Class Priors: Probabilities of each class estimated from training data frequencies.
+- Maximum Likelihood Estimation (MLE): For estimating means, covariance matrix, and priors from data.
+- Matrix Algebra: For efficient computation of inverse covariance and Mahalanobis distances.
+- Feature Scaling using StandardScaler: Standardizes features to zero mean and unit variance to improve model stability.
+- NumPy: Used for efficient numerical operations and vectorized computations.
+- Probability Theory: Computing posterior probabilities based on Gaussian likelihoods and priors for classification.
 
 ---
 
 # Files
 
-- `IntrovertExtrovertAmbivert.py` – Main implementation
-- `softmaxRegression.py` – Main implementation
+- `GDA.py` – Main implementation
 - `personality_synthetic_dataset.csv` – Sample dataset
-- `Raisin_Dataset.csv` – Sample dataset
 - `README.md` – Project documentation
 
 ---
@@ -63,5 +54,4 @@ The target variable is personality_type (e.g., introvert, extrovert, ambivert).
    pip install numpy pandas matplotlib scikit-learn
 4. Run:
    ```bash
-   python IntrovertExtrovertAmbivert.py
-   python softmaxRegression.py
+   python GDA.py
