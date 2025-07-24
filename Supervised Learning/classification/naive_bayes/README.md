@@ -1,33 +1,40 @@
-# locally-regression
+# Naive Bayes Spam Classifier
  
-
-This project implements **Locally Weighted Linear Regression**, a non-parametric machine learning algorithm. LWR fits a model around each query point using a weighted subset of the data, making it especially effective for datasets with non-linear patterns.
+This project implements a Naive Bayes classifier from scratch to detect spam emails based on their content.
 
 ---
 
 # Overview
 
-- Uses a **Gaussian kernel** to assign weights to training points based on distance to the query.
-- Fits a separate regression line for each query point using **weighted least squares**.
-- Visualizes how local regression adapts to varying data trends.
+- It uses probabilistic modeling with Laplace smoothing to classify emails as spam or non-spam (ham)
+- The vocabulary is enhanced using both the dataset and WordNet lexical database for better generalization
+- Text preprocessing using tokenization and vocabulary filtering witch Converts raw email text into a list of normalized words
+- Laplace smoothing to handle zero probabilities
+  
+---
+
+# DataSet
+
+spam_mail_classifier.csv : Contains emails
+The target variable is Label of the email (binary: "ham" = 0, "spam" = 1)
 
 ---
 
 # Concepts Used
 
-- Instance-based learning  
-- Local vs global modeling  
-- Matrix operations with NumPy  
-- Gaussian weighting  
-- Data visualization with Matplotlib
+- Natural Language Processing (NLP)
+- Probabilistic Models
+- Text Classification
+- Laplace Smoothing
+- Tokenization and Vocabulary Filtering
+- Usage of external lexical databases (WordNet)
 
 ---
 
 # Files
 
-- `locally_weighted_regression.py` – Core LWR implementation  
-- `Salary_dataset.csv` – Sample dataset of salaries vs. years of experience  
-- `locally_weighted_Regression.png` – Output visualization  
+- `NaiveBayes_lapace_smoothing.py` – Main implementation
+- `spam_mail_classifier.csv.csv` – Sample dataset
 - `README.md` – Project documentation
 
 ---
@@ -36,7 +43,12 @@ This project implements **Locally Weighted Linear Regression**, a non-parametric
 
 1. Install requirements:
    ```bash
-   pip install numpy pandas matplotlib
-2. Run:
+   pip install numpy pandas nltk
+2. Download requirements:
    ```bash
-   python locally_weighted_regression.py
+   import nltk
+   nltk.download('wordnet')
+   nltk.download('omw-1.4')
+4. Run:
+   ```bash
+   python logistic_regression.py
