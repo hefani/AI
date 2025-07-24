@@ -1,54 +1,31 @@
-# Naive Bayes Spam Classifier
- 
-This project implements a Naive Bayes classifier from scratch to detect spam emails based on their content.
+# Classification Algorithms
 
----
+This folder contains implementations and explanations of several foundational supervised classification algorithms used in machine learning. These algorithms are designed to predict discrete class labels based on input features.
 
-# Overview
+## Algorithms Included
 
-- It uses probabilistic modeling with Laplace smoothing to classify emails as spam or non-spam (ham)
-- The vocabulary is enhanced using both the dataset and WordNet lexical database for better generalization
-- Text preprocessing using tokenization and vocabulary filtering witch Converts raw email text into a list of normalized words
-- Laplace smoothing to handle zero probabilities
-  
----
+- **k-Nearest Neighbors (k-NN):**  
+  A simple, instance-based learning method that classifies data points based on the majority class among their k closest neighbors.
 
-# DataSet
+- **Support Vector Machine (SVM):**  
+  A powerful classifier that finds the optimal hyperplane separating different classes by maximizing the margin between them.
 
-spam_mail_classifier.csv : Contains emails
-The target variable is Label of the email (binary: "ham" = 0, "spam" = 1)
+- **Logistic Regression:**  
+  A linear model for binary classification that estimates probabilities using the logistic function.
 
----
+- **Softmax Regression:**  
+  A generalization of logistic regression for multi-class classification problems.
 
-# Concepts Used
+- **Naive Bayes:**  
+  A probabilistic classifier based on applying Bayes' theorem with strong independence assumptions between features.
 
-- Natural Language Processing (NLP)
-- Probabilistic Models
-- Text Classification
-- Laplace Smoothing
-- Tokenization and Vocabulary Filtering
-- Usage of external lexical databases (WordNet)
+## Objectives
 
----
+- Demonstrate a solid understanding of classical supervised classification algorithms.
+- Provide clean and efficient implementations in Python.
+- Include example datasets and usage instructions for experimentation and learning.
+- Highlight practical applications and scenarios where each algorithm excels.
 
-# Files
+## How to Use
 
-- `NaiveBayes_lapace_smoothing.py` – Main implementation
-- `spam_mail_classifier.csv.csv` – Sample dataset
-- `README.md` – Project documentation
-
----
-
-# How to Run
-
-1. Install requirements:
-   ```bash
-   pip install numpy pandas nltk
-2. Download requirements:
-   ```bash
-   import nltk
-   nltk.download('wordnet')
-   nltk.download('omw-1.4')
-4. Run:
-   ```bash
-   python logistic_regression.py
+Each subfolder contains the source code, README files with explanations, and example scripts for training and testing the models. Feel free to explore, modify, and expand upon these implementations.
