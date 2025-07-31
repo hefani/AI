@@ -1,51 +1,34 @@
-# Logistic Regression using Batch Gradient Ascent
+# K-Nearest Neighbors (KNN) – From Scratch
  
-This project implements logistic regression from scratch using batch gradient ascent to classify raisin types (Besni vs Kecimen) based on two features: Eccentricity and MajorAxisLength.
+This project implements the K-Nearest Neighbors (KNN) classification algorithm from scratch using NumPy.
 
 ---
 
 # Overview
 
-- The objective is to demonstrate understanding of binary classification using logistic regression
-- is trained using numerical optimization (batch gradient ascent)
-
----
-
-# DataSet
-
-Raisin_Dataset.csv: Contains features like:
-- Eccentricity
-- MajorAxisLength
-- ...and more
-
-The target variable is Raisin Class (binary: "Besni" = 0, "Kecimen" = 1)
+- A toy dataset is used to demonstrate the classification process with clear and simple logic.
+- This project is meant to illustrate how the KNN algorithm works internally without relying on external libraries like scikit-learn.
 
 ---
 
 # Concepts Used
 
-- Logistic function (sigmoid)
-- Cost function (cross-entropy)
-- Batch Gradient Ascent optimization
-- Decision boundary visualization
-- Model evaluation (accuracy)
+- Euclidean distance calculation
+- K-nearest neighbor search
+- Majority voting for classification
+- Classifier implementation from scratch using Python and NumPy
 
 ---
 
 # Files
 
-- `logistic_regression.py` – Main implementation
-- `Raisin_Dataset.csv` – Sample dataset
+- `k-NN.py` – Main implementation
 - `README.md` – Project documentation
-- logistic_regression.png – Saved plot with decision boundary
 
 ---
 
 # How to Run
 
-1. Install requirements:
+1. Run:
    ```bash
-   pip install numpy pandas matplotlib
-2. Run:
-   ```bash
-   python logistic_regression.py
+   python k-NN.py
