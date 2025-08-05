@@ -25,39 +25,43 @@ The target variable is cat and dog.
 
 # How It Works
 1. Data Preprocessing
-- Resizes and normalizes images
-- Augments training data with random flips & rotations
+   Resizes and normalizes images
+   Augments training data with random flips & rotations
 
-2. Model
-- Loads ResNet50 with pre-trained weights
-- Freezes early layers, fine-tunes the final layers
-- Uses CrossEntropyLoss and Adam optimizer
+3. Model
+   Loads ResNet50 with pre-trained weights
+   Freezes early layers, fine-tunes the final layers
+   Uses CrossEntropyLoss and Adam optimizer
 
 3. Training
-- Trained for several epochs with mini-batches
-- Validated on a hold-out dataset
+   Trained for several epochs with mini-batches
+   Validated on a hold-out dataset
 
 4. Evaluation
-- Reports accuracy and loss on validation set
-- Can predict on new unseen images
+   Reports accuracy and loss on validation set
+   Can predict on new unseen images
+
+---
 
 # Concepts Used
 
-- Multivariate Gaussian Distribution
-- Maximum Likelihood Estimation (MLE)
-- Discriminant Functions
-- Linear Decision Boundaries
-- Standardization
-- Soft Classification
-- Evaluation Metrics
-- NumPy Linear Algebra
+- Transfer Learning with Pre-trained CNN (ResNet50)
+- Convolutional Neural Networks (CNNs)
+- Fine-tuning and Freezing Layers
+- Image Data Augmentation
+- Binary Classification with CrossEntropyLoss
+- Mini-batch Gradient Descent using Adam Optimizer
+- Train/Validation Split Strategy
+- GPU Acceleration (CUDA) with PyTorch
+- Evaluation Metrics: Accuracy, Loss
+- Data Normalization (ImageNet mean and std)
+- PyTorch Dataset & DataLoader APIs
 
 ---
 
 # Files
 
-- `GDA.py` – Main implementation  
-- `personality_synthetic_dataset.csv` – Sample dataset
+- `cat_vs_dog.ipynb` – Main implementation  
 - `README.md` – Project documentation
 
 ---
@@ -67,6 +71,11 @@ The target variable is cat and dog.
 1. Install requirements:
    ```bash
    pip install numpy pandas scikit-learn
-2. Run:
-   ```bash
-   python GDA.py
+   pip install torch torchvision matplotlib numpy
+   
+2. install dataset from kaggle :
+   https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset
+
+3. Run:
+   jupyter notebook cat_vs_dog_resnet.ipynb
+
