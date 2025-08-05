@@ -1,31 +1,45 @@
-# Gaussian Discriminant Analysis (GDA) – Personality Classification
+# Cat vs Dog Image Classifier
  
-This project implements Gaussian Discriminant Analysis (GDA) from scratch to classify synthetic personality types based on psychological traits. The classifier is tested on a data with features such as social energy, creativity, talkativeness, risk taking, and more.
+This project builds a binary image classifier that distinguishes between cats and dogs using transfer learning with a pre-trained deep convolutional neural network (ResNet50).
 
 ---
 
 # Overview
 
-- It estimates the mean vector for each class, a shared covariance matrix, and prior probabilities
-- GDA uses these parameters to compute the probability of a data point belonging to each class and assigns the label with the highest probability
-- This repository contains a full implementation of the Gaussian Discriminant Analysis (GDA) algorithm for multi-class classification.
-- It is applied to a synthetic personality traits dataset, where each class represents a personality type (e.g., introvert, extrovert, ambivert)
-- The model computes class-wise means, a shared covariance matrix, and prior probabilities, then uses them to classify new inputs based on likelihoods
+- Classify images as cat or dog
+- Model: ResNet50 (pre-trained on ImageNet)
+- Dataset: Kaggle’s Dogs vs. Cats (25,000 labeled images)
+- Framework: PyTorch
+- Achieves high accuracy using fine-tuned ResNet model
 
 ---
 
 # DataSet
 
-personality_synthetic_dataset.csv: Contains features like:
-- Social energy
-- Talkativeness
-- Empathy
-- Risk taking
-- ...and more (30 total)
+Contains features like:
+cats and dogs images
 
-The target variable is personality_type (e.g., introvert, extrovert, ambivert).
+The target variable is cat and dog.
 
 ---
+
+# How It Works
+1. Data Preprocessing
+- Resizes and normalizes images
+- Augments training data with random flips & rotations
+
+2. Model
+- Loads ResNet50 with pre-trained weights
+- Freezes early layers, fine-tunes the final layers
+- Uses CrossEntropyLoss and Adam optimizer
+
+3. Training
+- Trained for several epochs with mini-batches
+- Validated on a hold-out dataset
+
+4. Evaluation
+- Reports accuracy and loss on validation set
+- Can predict on new unseen images
 
 # Concepts Used
 
