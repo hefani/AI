@@ -25,21 +25,21 @@ The target variable is cat and dog.
 
 # How It Works
 1. Data Preprocessing
-   Resizes and normalizes images
-   Augments training data with random flips & rotations
+- Resizes and normalizes images
+- Augments training data with random flips & rotations
 
 3. Model
-   Loads ResNet50 with pre-trained weights
-   Freezes early layers, fine-tunes the final layers
-   Uses CrossEntropyLoss and Adam optimizer
+- Loads ResNet50 with pre-trained weights
+- Freezes early layers, fine-tunes the final layers
+- Uses CrossEntropyLoss and Adam optimizer
 
 3. Training
-   Trained for several epochs with mini-batches
-   Validated on a hold-out dataset
+- Trained for several epochs with mini-batches
+- Validated on a hold-out dataset
 
 4. Evaluation
-   Reports accuracy and loss on validation set
-   Can predict on new unseen images
+- Reports accuracy and loss on validation set
+- Can predict on new unseen images
 
 ---
 
