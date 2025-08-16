@@ -85,7 +85,7 @@ LFW Dataset (Labeled Faces in the Wild)
 
 # Attempts
 
-1. at first I didn't use tau that I compare image's distance with tau, in triplet I compared the positive and negative images with anchor that positive image's distance must be shorter than the negative one.
+1. I wrote a custom CNN with embedding 128 and at first I didn't use tau that I compare image's distance with tau, in triplet I compared the positive and negative images with anchor that positive image's distance must be shorter than the negative one.
 - with 10 epoch my dev error was 32.55%
 - with 50 epoch my dev error was 20.16%
 - with 100 epoch my dev error was 14.83
