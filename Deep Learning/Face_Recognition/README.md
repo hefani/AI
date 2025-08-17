@@ -1,4 +1,4 @@
-# Face Recognition with Triplet Loss
+# Face Recognition with Siamese Network
  
 This project builds a face recognition system using a Siamese network trained with Triplet Loss. The model learns to embed faces into a feature space where images of the same person are close together and images of different people are far apart.
 
@@ -11,9 +11,12 @@ I included more explanation at the end about my attempts to improve the model.
 - Task: Face Recognition / Verification
 - Model: Custom CNN with embedding size = 128
 - Loss Function: Triplet Margin Loss
-- Dataset: LFW (Labeled Faces in the Wild) from Kaggle
 - Framework: PyTorch + facenet-pytorch (for face alignment with MTCNN)
 - Goal: Build embeddings for faces and distinguish identities with high accuracy
+- Trained on a dataset of 46,848 images across 4,684 identities.
+- Supports training from scratch and loading pretrained models.
+- Easy-to-use inference for face verification and recognition tasks.
+- GPU-accelerated training and evaluation with CUDA support.
 
 ---
 
@@ -41,6 +44,7 @@ LFW Dataset (Labeled Faces in the Wild)
 3. Training
 - Optimizer: Adam (lr = 0.001)
 - Loss: Triplet Margin Loss (margin = 1.0)
+- I once code this part from scratch and once I used a pretrained model(ResNet18)
 
 4. Evaluation
 - Uses pairwise distance between embeddings
@@ -62,6 +66,7 @@ LFW Dataset (Labeled Faces in the Wild)
 # Files
 
 - `training_face_recognition.ipynb` – for train on data (you can train it on kaggle or google colab)
+- `training_face_recognition_ResNet18.ipynb` – for train on data (you can train it on kaggle or google colab)
 - `training_face.ipynb` – for run on you computer
 - `README.md` – Project documentation
 - `face_recognition_model.pth` – Trained model weights for first attempt with 100 epochs
@@ -79,6 +84,7 @@ LFW Dataset (Labeled Faces in the Wild)
 
 3. Run:
    jupyter notebook training_face_recognition.ipynbistance
+   jupyter notebook training_face_recognition_ResNet18.ipynbistance
    jupyter notebook face_recognition.ipynb
 
 ---
@@ -91,3 +97,6 @@ LFW Dataset (Labeled Faces in the Wild)
 - with 100 epoch my dev error was 14.83
   
 and I put the first attempt's trained model weights in face_recognition_model.pth
+2. I changed my code to use a pretrained code(ResNet18) and I also add more data now we have images from 4682 persons too, this made the loss really low even with 10 epochs.
+- with 10 epochs and with batch size 32 my dev error was 10.07%
+- 
