@@ -28,7 +28,7 @@ The target variable is cat and dog.
 - Resizes and normalizes images
 - Augments training data with random flips & rotations
 
-3. Model
+2. Model
 - Loads ResNet50 with pre-trained weights
 - Freezes early layers, fine-tunes the final layers
 - Uses CrossEntropyLoss and Adam optimizer
