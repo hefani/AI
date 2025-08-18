@@ -14,5 +14,21 @@ This folder contains my hands-on deep learning projects built during my early jo
 - Techniques: CNN for face embedding, data augmentation, tune a pretrained model, MTCNN for face detection and alignment
 3. Depth Estimation
 - Goal: Predict depth maps from a single RGB image
+- I'm still working on it
 
- I'm still working on it
+---
+
+# Skills Learned
+
+- CNN architectures for classification and recognition.
+- Image preprocessing, augmentation, and dataset handling.
+- Using pre-trained models and transfer learning.
+- Detection pipelines (MTCNN) and end-to-end recognition workflows.
+
+---
+
+# Next Step
+
+- Finish and document the Monocular Depth Estimation project.
+- Explore GANs for image generation and RNNs for sequence modeling.
+- Build more advanced custom deep learning projects for research applications.
