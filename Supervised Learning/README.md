@@ -10,7 +10,6 @@ This section is designed to:
 - Demonstrate a practical understanding of supervised learning techniques.
 - Explore key classification and regression models.
 - Apply algorithms on curated Kaggle datasets to strengthen problem-solving and research skills.
-- Provide clean, modular codebases useful for both learning and MITACS applications.
 
 ---
 
