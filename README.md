@@ -10,8 +10,6 @@ My journey into machine learning began with Andrew Ng’s renowned Machine Learn
 
 This repository represents my hands-on effort to deepen my knowledge by translating theory into practice, especially focusing on classification and regression problems with real-world datasets like personality prediction and raisin classification. By working through the challenges of data preprocessing, algorithm implementation, and model evaluation, I have strengthened my foundational skills and developed a practical understanding of how machine learning works beyond theory.
 
-My goal is to apply this growing expertise to impactful research projects, particularly through the Mitacs program, where I aim to collaborate on data-driven problems and contribute innovative solutions. This project not only showcases my technical ability but also my commitment to continuous learning and research, driven by both academic curiosity and a desire to make meaningful contributions in the field of artificial intelligence.
-
 ## Repository Structure
 
 - **classification/**  
